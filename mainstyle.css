@@ -1,0 +1,61 @@
+body {
+    background: url('background.avif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    position: relative; /* To position the overlay */
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for dim effect */
+    z-index: -1; /* Keeps it behind all content */
+  }
+  
+      .header {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        background: lightblue;
+        border-radius: 5px;
+      }
+      .details-container {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .profile-pic {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #fff;
+      }
+      .image-frame {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .btn-group {
+        margin-top: 10px;
+      }
+      .website-links {
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+      }
+      .website-links a {
+        color: orange;
+        text-decoration: none;
+      }
+      .website-links a:hover {
+        text-decoration: underline;
+      }
